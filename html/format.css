@@ -1,0 +1,82 @@
+
+/* schriftstil,abstände */
+
+body
+{margin-top: 20px; margin-left: 20px; margin-right: 20px;margin-bottom: 20px; color: white;  background-color:#000000; font-family: verdana,arial; font-size: 10pt;}
+
+
+table,tr,td
+{ color: white ;font-family: verdana,arial; font-size: 10pt}
+
+/* scrolleiste internet explorer ab vers.5.5 */
+
+body
+{scrollbar-arrow-color: white; scrollbar-base-color: 636a84;
+scrollbar-highlight-color : #e6e6e6; scrollbar-shadow-color : black;
+SCROLLBAR-TRACK-COLOR: #000000;}
+
+/* menue linke seite */
+
+#menuleft a {display: block;
+background-color:#737C95;
+color:silver; text-decoration:none ;font-family:verdana, sans-serif; font-size: 10pt;
+width:175px;
+padding-left: 2px; padding-bottom: 2px;padding-top: 2px;margin: 0px auto;
+border-bottom:solid 1px #e6e6e6;
+}
+
+#menuleft a:visited{background-color:#737C95;
+color:silver;text-decoration:none;font-family:verdana, sans-serif; font-size: 10pt; width:175px;
+padding-left: 2px; padding-bottom: 2px; padding-top: 2px;margin: 0px auto;
+border-bottom:solid 1px #e6e6e6;
+}
+
+#menuleft a:active{background-color:#737C95; color:silver;text-decoration:none;font-family:verdana, sans-serif; font-size: 10pt;width:175px;
+padding-left: 2px; padding-bottom: 2px; padding-top: 2px;margin: 0px auto;
+border-bottom:solid 1px #e6e6e6;
+}
+
+#menuleft a:hover {background-color:silver;
+color: #445543;
+text-decoration:none ;font-family:verdana, sans-serif; font-size:10pt;
+width:175px;
+padding-left: 2px; padding-bottom: 2px;   padding-top: 2px;margin: 0px auto ;
+border-bottom:solid 1px #e6e6e6;
+}
+
+/* menutitle, sidetitle */
+
+.rubrik {background-color:#646B84; color:silver;  text-decoration:none ;font-family:verdana, sans-serif; font-size: 10pt;width:175px;
+padding-left: 2px; padding-bottom: 2px; padding-top: 2px;margin: 0px auto;
+border-bottom:solid 1px #e6e6e6;
+border-top:solid 1px #e6e6e6;
+height:19px;
+}
+
+.topbar {background-color:#646B84; color:silver;  text-decoration:none ;font-family:verdana, sans-serif; font-size: 10pt;
+padding-left: 2px; padding-bottom: 2px; padding-top: 2px;margin: 0px auto;
+height:19px;
+
+}
+
+
+/* allgemeine links im text */
+
+a:link{ color: white; text-decoration:underline; ;font-family: verdana; font-size: 10pt;}
+
+a:visited{color: white;text-decoration:underline;font-family: verdana; font-size: 10pt;}
+
+a:active{ color:white;text-decoration:underline;font-family: verdana; font-size: 10pt; }
+
+a:hover{ color: #ffffff;background-color:#737C95;  text-decoration:none;font-family: verdana; font-size: 10pt; }
+
+/* time - date */
+
+input.date {
+font-size:9pt;
+background-color:#646B84;
+color:white;
+border:solid 0px;
+}
+
+form {margin-bottom:0px;}
