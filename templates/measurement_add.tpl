@@ -1,4 +1,4 @@
-<b>Overview</b>
+<b>Add</b>
 <br>
 <br>
 <table border="0" cellpadding="0" cellspacing="0" width="100%">
@@ -43,7 +43,7 @@
      			<td valign="top">
 					<input name="runtime" type="text" size="4" maxlength="4">
      			</td>
-     			<td width="10"><input name="upload" type="submit" class="box" value=" Upload "></td>
+     			<td width="10"><input name="upload" type="submit" class="box" value=" Commit "></td>
       		</form>
           </tr>
    </tbody>
