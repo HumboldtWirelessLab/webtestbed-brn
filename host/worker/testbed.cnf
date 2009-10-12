@@ -1,0 +1,15 @@
+dbhost=localhost
+mailusername=testbed
+mailserver=mailslv1.informatik.hu-berlin.de
+mailfrom=testbed@informatik.hu-berlin.de
+mailto=user@informatik.hu-berlin.de
+mailnotify=no
+
+
+USESSH=no
+SSHUSER=testbed
+SSHHOST=localhost
+RESULTDIR=/var/www/
+HELPER_HOME=/home/testbed/helper
+#MODE=sim
+MODE=real
