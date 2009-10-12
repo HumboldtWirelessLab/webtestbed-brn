@@ -1,5 +1,6 @@
 #!/bin/sh
 
+. $2
 . $1/config
 
 cat > $1/monitor.$1 << EOF
