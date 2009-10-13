@@ -1,5 +1,7 @@
 #!/bin/sh
 
+echo "Prepare Scripts"
+
 . $2
 . $1/config
 
@@ -50,7 +52,7 @@ EOF
 
 echo "#NODE	DEVICE	MODULSDIR				MODOPTIONS	WIFICONFIG		CLICKMODDIR	CLICKSCRIPT		CLICKLOGFILE			APPLICATION		APPLICATIONLOGFILE" > $1/testbed_$1.mes
 for i in $DEVICES; do
-echo "$i ath0	BASEDIR/nodes/lib/modules/i586		-		CONFIGDIR/monitor.$1	-		CONFIGDIR/$CLICKFILE		LOGDIR/$i.ath0.log	-			-" >> $1/testbed_$1.mes
+echo "$i ath0	BASEDIR/nodes/lib/modules/mips		-		CONFIGDIR/monitor.$1	-		CONFIGDIR/$CLICKFILE		LOGDIR/$i.ath0.log	-			-" >> $1/testbed_$1.mes
 done
 
 exit 0

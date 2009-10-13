@@ -11,5 +11,6 @@ SSHUSER=testbed
 SSHHOST=localhost
 RESULTDIR=/var/www/
 HELPER_HOME=/home/testbed/helper
+MEASUREMENTDIR=/home/testbed/measurement
 #MODE=sim
 MODE=real

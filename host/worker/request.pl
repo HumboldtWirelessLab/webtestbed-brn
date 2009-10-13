@@ -3,7 +3,8 @@ use DBI;
 use ConfigReader;
 
 #read config
-my %allconfig = &ConfigReader::read_config('$ARGV[0]');
+#print $ARGV[0];
+my %allconfig = &ConfigReader::read_config($ARGV[0]);
                                                                                                                                                                                                                  
 # Connect To Database                                                                                                                                                                                            
 $database = "testbed";                                                                                                                                                                                               
@@ -62,12 +63,12 @@ while (@array = $query->fetchrow_array) {
 
     #emailnotifier
     $mailusername = $allconfig{'mailusername'};
-    $mailserver = $allconfig{'mailserver');
-    $mailfrom = $allconfig{'mailfrom');
-    $mailto = $allconfig{'mailto');
-		$mn = $allconfig{'mailnotify');
+    $mailserver = $allconfig{'mailserver'};
+    $mailfrom = $allconfig{'mailfrom'};
+    $mailto = $allconfig{'mailto'};
+		$mn = $allconfig{'mailnotify'};
 		
-		if ( $mn == "yes" ) {
+		if ( $mn eq "yes" ) {
 		  system("sendEmail -f $mailfrom -t $mailto -u \"BRN-Testbed\" -m \"Ihre Messung ist beendet\" -s $mailserver:26 -o tls=yes -o username=$mailusername");
     }
 

@@ -4,6 +4,8 @@ use strict;
 
 sub read_config ($) {
    my ($file_name) = @_;
+#   print "ff: ";
+#   print $file_name;
    my %config;
    open( CNF, '<'.$file_name ) or die 'sh*** cannot open file : '.$!;
    while (<CNF>) {

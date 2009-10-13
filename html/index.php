@@ -4,10 +4,10 @@
 require('Smarty.class.php');
 $smarty = new Smarty();
 
-$smarty->template_dir = '/var/www/testbed/templates';
-$smarty->compile_dir = '/var/www/testbed/templates_c';
-$smarty->cache_dir = '/var/www/testbed/cache';
-$smarty->config_dir = '/var/www/testbed/configs';
+$smarty->template_dir = '/var/www/webtestbed/templates';
+$smarty->compile_dir = '/var/www/webtestbed/templates_c';
+$smarty->cache_dir = '/var/www/webtestbed/cache';
+$smarty->config_dir = '/var/www/webtestbed/config';
 
 if(isset($_GET) and count($_GET) > 0) $request = $_GET;
 else if(isset($_POST)and count($_POST) > 0) $request = $_POST;
