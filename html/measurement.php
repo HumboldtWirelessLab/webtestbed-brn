@@ -86,6 +86,18 @@
             		)
         		);
  		}
+
+ 		$snodecfg = array();
+ 		$gid = $group_data[0]['id'];
+ 		$result=mysql_query("select devices.id, devices.name from devices,devicegroupmembers where devicegroupmembers.groupid=$gid and devicegroupmembers.deviceid=devices.id");
+ 		while ($row = mysql_fetch_assoc($result))
+ 		{ 
+   			array_push($snodecfg, array(
+            		'id' => $row['id'],
+            		'name' => $row['name'],
+            		)
+        		);
+ 		}
  		break;
  }       
 

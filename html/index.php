@@ -2,12 +2,14 @@
 
 // put full path to Smarty.class.php
 require('Smarty.class.php');
+include("../secure/smarty.cfg");
+
 $smarty = new Smarty();
 
-$smarty->template_dir = '/var/www/webtestbed/templates';
-$smarty->compile_dir = '/var/www/webtestbed/templates_c';
-$smarty->cache_dir = '/var/www/webtestbed/cache';
-$smarty->config_dir = '/var/www/webtestbed/config';
+$smarty->template_dir = $smarty_tmpl_dir;
+$smarty->compile_dir = $smarty_tmplc_dir;
+$smarty->cache_dir = $smarty_cache_dir;
+$smarty->config_dir = $smarty_config_dir;
 
 if(isset($_GET) and count($_GET) > 0) $request = $_GET;
 else if(isset($_POST)and count($_POST) > 0) $request = $_POST;
@@ -88,9 +90,10 @@ switch ($request['menu']) {
 	  	$smarty->assign('page', 'measurement_add');
 	  	$operation = 'nothing';
 	    include 'measurement.php';
-		$smarty->assign('group_data', $group_data); // LOOP
-	  	$smarty->assign('config_data', $config_data); // LOOP
-	  	break;
+	    $smarty->assign('group_data', $group_data); // LOOP
+      $smarty->assign('config_data', $config_data); // LOOP
+      $smarty->assign('snodecfg', $snodecfg); // LOOP
+      break;
 	  case "operation":
 	  
 	    switch ( $request['operation'] ) {
