@@ -3,8 +3,11 @@
 <title>BerlinRootNet-Testbed - {$title}</title>
 
 <link rel="stylesheet" href="format.css" type="text/css">
+<script src="js/json2.js" type="text/javascript"></script>
+<script src="js/ajax.js" type="text/javascript"></script>
 <script src="js/highlightlinks.js" type="text/javascript"></script>
 <script src="js/daytime.js" type="text/javascript"></script>
+<script src="js/measurement.js" type="text/javascript"></script>
 <script>
 <!--
 onload=HighlightLinks;
