@@ -20,7 +20,7 @@
             </td>
             <td valign="top">
               <input type="hidden" name="MAX_FILE_SIZE" value="2000000">
-					    <input name="clickfile" type="file" size="30" maxlength="2000000">
+					    <input name="clickfile" type="file" size="10" maxlength="2000000">
             </td>
          </tr>
  				{/section}
