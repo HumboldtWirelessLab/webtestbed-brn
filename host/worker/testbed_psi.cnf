@@ -1,0 +1,16 @@
+dbhost=localhost
+mailusername=testbed
+mailserver=mailslv1.informatik.hu-berlin.de
+mailfrom=testbed@informatik.hu-berlin.de
+mailto=user@informatik.hu-berlin.de
+mailnotify=no
+
+
+USESSH=no
+SSHUSER=testbed
+SSHHOST=localhost
+RESULTDIR=/var/www/webtestbed/html/result/
+HELPER_HOME=/home/sombrutz/lab/helper/
+MEASUREMENTDIR=/home/sombrutz/lab/measurement/webtestbed/
+#MODE=sim
+MODE=real

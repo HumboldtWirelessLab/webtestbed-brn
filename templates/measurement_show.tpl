@@ -26,7 +26,7 @@
                 <td valign="top">{$meas_data[row].runtime}</td>
                 <td valign="top">{$meas_data[row].state}</td>
                 {if ( $meas_data[row].resultfile != "" ) }
-                	<td valign="top"><a href="{$meas_data[row].resultfile}">Resut</a></td>
+                	<td valign="top"><a href="{$meas_data[row].resultfile}">Result</a></td>
                 {else}
                 	<td valign="top">None</td>
                 {/if}
