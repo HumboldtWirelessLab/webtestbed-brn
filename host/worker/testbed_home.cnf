@@ -1,0 +1,15 @@
+dbhost=localhost
+mailusername=sombrutz
+mailserver=mailslv1.informatik.hu-berlin.de
+mailfrom=sombrutz@informatik.hu-berlin.de
+mailto=sombrutz@informatik.hu-berlin.de
+mailnotify=no
+
+
+USESSH=no
+SSHUSER=root
+SSHHOST=192.168.10.3
+RESULTDIR=/var/www/testbed/html/result/
+HELPER_HOME=/home/sombrutz/lab/helper
+#MODE=sim
+MODE=real
