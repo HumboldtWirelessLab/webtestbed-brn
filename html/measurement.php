@@ -42,10 +42,9 @@
  		break;
  		
     case "show":
-    	$query = "select deviceconfig.name as configname,measurement.id, devicegroups.name, measurement.clickfilename, users.name as username, measurement.runtime, measurementstate.statename,measurement.resultfile ".
-    	"from measurement,users,measurementstate,devicegroups,deviceconfig ".
-    	"where measurement.devicegroupid=devicegroups.id and measurement.userid=users.id and ".
-    	"measurement.state=measurementstate.id and measurement.deviceconfig=deviceconfig.id";
+    	$query = "SELECT dc.name AS configname, m.id, dg.name, m.clickfilename, u.name AS username, m.runtime, ms.statename, m.resultfile".
+    	" FROM measurement m LEFT OUTER JOIN users u ON u.id = m.userid, measurementstate ms, devicegroups dg, deviceconfig dc".
+    	" WHERE m.devicegroupid = dg.id AND m.state = ms.id AND m.deviceconfig = dc.id";
     	$measurements=mysql_query($query);
 		$meas_data = array();
 		while ($measrow = mysql_fetch_assoc($measurements))
